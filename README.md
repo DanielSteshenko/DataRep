@@ -9,9 +9,8 @@ Then:
 ``npm run dev``
 <br>
 
-OR
+**OR**
 
-<br>
 ``npm run start-server``
 <br>
 And in another terminal run
