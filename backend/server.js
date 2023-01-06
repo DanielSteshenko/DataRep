@@ -7,7 +7,10 @@ const port = 4000;
 
 // Set up mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true });
+mongoose.connect(
+  'mongodb+srv://daniel:XsYFZilf5uUb33Lw@cluster0.bbi9ncr.mongodb.net/?retryWrites=true&w=majority',
+  { useNewUrlParser: true }
+);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', function () {
